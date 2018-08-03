@@ -1,25 +1,57 @@
 //
-//  ViewController.swift
-//  sulpricetest
-//
-//  Created by CAUAD12 on 2018. 8. 2..
-//  Copyright © 2018년 CAUAD12. All rights reserved.
-//
+
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+enum Sulinfo {
+    case beer
+    case soju
+    
+    var sulTitle:Int {
+        get{
+            let sulPrice : Int
+            switch self {
+            case.beer:
+                sulPrice = 4000
+            case.soju:
+                sulPrice = 3500
+            }
+            return sulPrice
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
+
+var beerprice = Sulinfo.beer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
